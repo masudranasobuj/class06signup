@@ -75,10 +75,12 @@ nav ul li a:hover{
     background-color: #1da1f2;
 }
 /******* header end *********/
+
+/****************************** home page css start *********************************/
 section{
     padding: 80px 0px;
 }
-/*******banner section start*********/
+/******banner section start******/
 .banner{}
 .banner .container{
     text-align: center;
@@ -96,22 +98,49 @@ section{
     font-weight: 700;
     padding-top: 15px;
 }
-/*******banner section end*********/
+/******banner section end******/
+/*****poftfolio section start*****/
+.portfolio-section{}
+.project{
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #1da1f2;
+    box-shadow:  50px 50px 100px #1577b3, 
+             -50px -50px 100px #25cbff;
+    padding: 15px;
+}
+.project img{
+    height: 271px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.project h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+.project:hover{
+    opacity: 0.5;
+}
 
-/**************signup from section css start **********/
+/***poftfolio section end**/
+/****************************home page css end **********************/
+/**************signup page css start **********/
 .signup-from-section{}
 .signup{
-	width: 34%;
-	flex: 0 0 auto;
-	color: white;
-	background: #1da1f2;
-	box-shadow:  50px 50px 100px #1577b3, 
+    width: 34%;
+    flex: 0 0 auto;
+    color: white;
+    background: #1da1f2;
+    box-shadow:  50px 50px 100px #1577b3, 
              -50px -50px 100px #25cbff;
-	padding: 50px;
-	transition-duration: 0.3s;
+    padding: 50px;
+    transition-duration: 0.3s;
 }
 .signup:hover{
-	box-shadow:  50px 50px 100px #25cbff, 
+    box-shadow:  50px 50px 100px #25cbff, 
              -50px -50px 100px #1577b3;
 }
 form{}
@@ -141,59 +170,28 @@ form textarea{}
 
 form input[type="radio"],
 form input[type="checkbox"]{
-	width: auto;
+    width: auto;
 }
 form input[type="submit"]{
-	width: auto;
-	background-color: #1577b3;
-	font-size: 16px;
-	text-transform: capitalize;
-	padding: 10px 30px;
+    width: auto;
+    background-color: #1577b3;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 30px;
 }
 form p{
-	font-weight: 500;
-}
-form p a{
-	color: #fff;
-	text-decoration: none;
-}
-input:focus, textarea:focus{
-	outline: none;
-	background-color: #1577b3;
-}
-/**************signup from section end **********/
-
-/*************poftfolio section start************/
-.portfolio-section{}
-.project{
-    display: block;
-    text-decoration: none;
-    border-radius: 10px;
-	background: #1da1f2;
-	box-shadow:  50px 50px 100px #1577b3, 
-             -50px -50px 100px #25cbff;
-	padding: 15px;
-}
-.project img{
-    height: 271px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-.project h2{
-    color: #fff;
-    font-size: 24px;
     font-weight: 500;
 }
-.project:hover{
-    opacity: 0.5;
+form p a{
+    color: #fff;
+    text-decoration: none;
 }
-
-/*************poftfolio section end************/
-
-
-
-/******************************* footer start **************************/
+input:focus, textarea:focus{
+    outline: none;
+    background-color: #1577b3;
+}
+/****************************signup page end ********************/
+/******************************* footer section start **************************/
 footer{
     background: #d6d5d5;
     padding: 30px 0px;
@@ -202,7 +200,6 @@ footer .container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* background: #d6d5d5; */
 }
 /* footer left start */
 footer .container .left{flex: 0 0 auto;width: 50%;}
@@ -220,7 +217,7 @@ footer .container .left .footer-menu li a{
     text-transform: uppercase;
 }
 footer .container .left .footer-menu li a:hover{
-	opacity: 0.5;
+    opacity: 0.5;
 }
 /* footer left end */
 /* footer right start */
@@ -248,7 +245,7 @@ footer .container .right .social-link li a{
     color: #333;
 }
 footer .container .right .social-link li a:hover{
-	opacity: 0.5;
+    opacity: 0.5;
 }
 /* footer right end */
-/************************** footer end *********************/
+/************************** footer section end *********************/
